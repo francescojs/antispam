@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 client.on('message', (message) => {
-    const logs = message.guild.channels.cache.get("734976829504618527");
+    const logs = message.guild.channels.cache.get("channel id");
     const embed2 = new Discord.MessageEmbed()
     .setTitle("NEW SPAM")
     .setDescription(`${message.author} has posted a spam link in ${message.channel}\nContent was: ${message.content}`)
