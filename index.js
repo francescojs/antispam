@@ -11,7 +11,7 @@ client.on('message', (message) => {
     .setColor("YELLOW")
     .addField("Message deleted", `${message.author} spam isn't allowed.`) 
     .setTimestamp();
-    if (message.content.includes('discord.gg/'||'discordapp.com/invite/')) { //if it contains an invite link
+    if (message.content.includes('discord.gg/'||'discordapp.com/invite/')) {
       message.delete()
         .then(message.channel.send(embed))
         logs.send(embed2);
